@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Section 2: Javascript Language Basics</title>
+    <!-- <link rel = 'stylesheet' href = "index.css"> -->
+    
+</head>
+<body>
+        <a class= "active3" href= "https://github.com/cherielum" style ="float: right; margin: 10px"> GitHub </a>
+		<a class= "active2" href= "mailto: cherie.lum2@gmail.com" style ="float: right; margin: 10px">Contact </a>
+		<a class= "active1" href= "http://88-sites.surge.sh/88days-homepage/homepage.html" style ="float: right; margin: 10px" > Home </a>
+        <br /> <br/>
+
+        <h1> Guessing how old you are with JavaScript!</h1>
+        <p> Hope you had fun testing the computer or calculating someone else's age.</p>
+        <p> If you'd like to do it again, just refresh the page.</p>
+
+        <p>Here is the code: <br /><br />
+                $(document).ready(function (){ <br />
+
+                    alert('I bet I can guess how old you are after obtaining two answers!')<br />
+                
+                    var yearToday = prompt ('What year is it today?')<br />
+                    var yearOfBirth = prompt ('What is your birth year?')<br /><br />
+                
+                    function calculateAge(yearOfBirth) {<br />
+                        var age = yearToday-yearOfBirth;<br />
+                        return age;<br />
+                    }<br /><br />
+                
+                    var age = calculateAge(yearOfBirth); <br />
+                    alert('Are you '+ age +' years old??');<br />
+                })<br />
+        </p>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
+    <script src = "index.js"></script>
+</body>
+</html>
